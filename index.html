@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note_It</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-sticky-note"></i>
+            <h1>Note_It</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="note-form">
+            <div class="note-input">
+                <input type="text" id="note-title" placeholder="Title">
+                <textarea id="note-content" placeholder="Take a note..."></textarea>
+            </div>
+            <div class="note-footer">
+                <div class="note-options">
+                    <div class="hamburger-menu">
+                        <button id="hamburger-btn" title="Formatting options">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="format-menu" id="format-menu">
+                            <button class="format-option" id="checkbox-btn" title="Add checkbox">
+                                <i class="fas fa-check-square"></i> Checkbox
+                            </button>
+                            <button class="format-option" id="list-btn" title="Add numbered list">
+                                <i class="fas fa-list-ol"></i> Numbered List
+                            </button>
+                            <button class="format-option" id="bullet-btn" title="Add bullet points">
+                                <i class="fas fa-list-ul"></i> Bullet Points
+                            </button>
+                        </div>
+                    </div>
+                    <div class="color-options">
+                        <div class="color-option" data-color="#ffffff" style="background-color: #ffffff;"></div>
+                        <div class="color-option" data-color="#f28b82" style="background-color: #f28b82;"></div>
+                        <div class="color-option" data-color="#fbbc04" style="background-color: #fbbc04;"></div>
+                        <div class="color-option" data-color="#fff475" style="background-color: #fff475;"></div>
+                        <div class="color-option" data-color="#ccff90" style="background-color: #ccff90;"></div>
+                        <div class="color-option" data-color="#a7ffeb" style="background-color: #a7ffeb;"></div>
+                        <div class="color-option" data-color="#cbf0f8" style="background-color: #cbf0f8;"></div>
+                        <div class="color-option" data-color="#d7aefb" style="background-color: #d7aefb;"></div>
+                    </div>
+                </div>
+                <button id="add-note">Add Note</button>
+            </div>
+        </div>
+
+        <div class="notes-container" id="notes-container">
+            <!-- Notes will be added here dynamically -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; Project_2</p>
+</body>
+</html> 
